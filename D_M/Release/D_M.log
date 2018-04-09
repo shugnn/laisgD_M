@@ -1,0 +1,48 @@
+﻿生成启动时间为 2018/4/9 9:44:37。
+     1>项目“D:\VS2010\SK\D_M\D_M\D_M.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp StkAna.cpp
+         main.cpp
+         StkAna.cpp
+     1>StkAna.cpp(73): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(74): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(75): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(76): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(77): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(78): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(79): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(127): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(128): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(129): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(130): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(131): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(132): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(133): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(188): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>StkAna.cpp(270): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(271): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(272): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(273): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(320): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(321): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(322): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(323): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(324): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(325): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(326): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(327): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>StkAna.cpp(479): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>StkAna.cpp(480): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>StkAna.cpp(536): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>StkAna.cpp(537): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+       Link:
+         D:\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VS2010\SK\D_M\Release\D_M.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\VS2010\SK\D_M\Release\D_M.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VS2010\SK\D_M\Release\D_M.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+         Release\StkAna.obj
+         正在生成代码
+         已完成代码的生成
+         D_M.vcxproj -> D:\VS2010\SK\D_M\Release\D_M.exe
+     1>已完成生成项目“D:\VS2010\SK\D_M\D_M\D_M.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:25.58
