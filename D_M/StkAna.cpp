@@ -9,11 +9,11 @@
 #include<sstream>
 using namespace std;
 #include"StkAna.h"
-string dir_day_sz = "D:\\new_hxzq_hc\\vipdoc\\sz\\lday\\";
-string dir_day_sh = "D:\\new_hxzq_hc\\vipdoc\\sh\\lday\\";
-string dir_fz5_sz = "D:\\new_hxzq_hc\\vipdoc\\sz\\fzline\\";
-string dir_fz5_sh = "D:\\new_hxzq_hc\\vipdoc\\sh\\fzline\\";
-string dir_rslt = "D:\\VS2010\\SK\\D_M\\Rslt\\";
+string dir_day_sz = "C:\\shugnn0411\\PROGRAM\\new_tdx\\vipdoc\\sz\\lday\\";// "D:\\new_hxzq_hc\\vipdoc\\sz\\lday\\"; 
+string dir_day_sh = "C:\\shugnn0411\\PROGRAM\\new_tdx\\vipdoc\\sh\\lday\\";// "D:\\new_hxzq_hc\\vipdoc\\sh\\lday\\";
+string dir_fz5_sz = "C:\\shugnn0411\\PROGRAM\\new_tdx\\vipdoc\\sz\\fzline\\";//"D:\\new_hxzq_hc\\vipdoc\\sz\\fzline\\";
+string dir_fz5_sh = "C:\\shugnn0411\\PROGRAM\\new_tdx\\vipdoc\\sh\\fzline\\";//"D:\\new_hxzq_hc\\vipdoc\\sh\\fzline\\";
+string dir_rslt = "C:\\shugnn0411\\APPS\\SK\\D_M\\Rslt";//"D:\\VS2010\\SK\\D_M\\Rslt\\";
 int timeA = 20140101, timeB = 20180126;
 bool DTL = true;
 CAna::CAna()
@@ -691,7 +691,7 @@ void CAna::Moneys()
 	for (double cc = -20; cc <= 15; cc += 5)for (double ccb = cc + 5; ccb <= 20; ccb += 5)
 	for (double oc = -10; oc <= 9; oc += 1)for (double ocb = oc + 1; ocb <= 10; ocb += 1)
 	{
-		if (id1 <8*1000*1000){ id1++; continue; }//18474317//1401147//42123788
+		if (id1 <28*1000*1000){ id1++; continue; }//18474317//1401147//42123788
 		//if (id1 < 8666266){ id1++; continue; }//18474317//1401147
 		//if (id1 > 3666266)break;
 		double bal1 = 100000, max1 = 0, rev1 = 0, cnts = 0;
@@ -764,10 +764,10 @@ void CAna::Moneys()
 					<< "  balmax1 " << balmax1 << " bal1 " << bal1 << " cnts " << cnts << " max " << max1 << " rev " << rev1 << endl;
 			}
 		}
-		if (fmod(id1, 1000000) == 0)
+		if (fmod(id1, 100000) == 0)
 		{
 			time_t tm; time(&tm);
-			cout << fixed << id1 / 1000000 << "M cc " << setprecision(0) << cc << " " << ccb << " am3 " << setprecision(2) << am3 << " " << am3b << " am2 " << am2 << " " << am2b << " am1 " << am1 << " " << am1b << " oc " << setprecision(0) << oc << " " << ocb << ctime(&tm);
+			cout << fixed << id1 / 100000 << "M cc " << setprecision(0) << cc << " " << ccb << " am3 " << setprecision(2) << am3 << " " << am3b << " am2 " << am2 << " " << am2b << " am1 " << am1 << " " << am1b << " oc " << setprecision(0) << oc << " " << ocb << ctime(&tm);
 		}
 		id1++;
 	}
