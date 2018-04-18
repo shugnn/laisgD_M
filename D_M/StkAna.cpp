@@ -691,7 +691,11 @@ void CAna::Moneys()
 	for (double cc = -20; cc <= 15; cc += 5)for (double ccb = cc + 5; ccb <= 20; ccb += 5)
 	for (double oc = -10; oc <= 9; oc += 1)for (double ocb = oc + 1; ocb <= 10; ocb += 1)
 	{
+<<<<<<< HEAD
 		if (id1 <28*1000*1000){ id1++; continue; }//18474317//1401147//42123788
+=======
+		if (id1 <9*1000*1000){ id1++; continue; }//18474317//1401147//42123788
+>>>>>>> a2c3e11642e5b2df22612a35645e9ab548620bd1
 		//if (id1 < 8666266){ id1++; continue; }//18474317//1401147
 		//if (id1 > 3666266)break;
 		double bal1 = 100000, max1 = 0, rev1 = 0, cnts = 0;
@@ -757,17 +761,29 @@ void CAna::Moneys()
 			cout << fixed 
 				<< id1 << " cc " << setprecision(0) << cc << " " << ccb << " am3 " << setprecision(2) << am3 << " " << am3b << " am2 " << am2 << " " << am2b << " am1 " << am1 << " " << am1b << " oc " << setprecision(0) << oc << " " << ocb << endl
 				<< "  balmax1 " << balmax1 << "    bal1 " << setprecision(0) << bal1 << " cnts " << cnts << " max " << max1 << " rev " << setprecision(2) << rev1 << " " << ctime(&tm);
-			if (!DTL && outfile1.is_open())
+			if (!DTL)
 			{
-				outfile1 << fixed 
-					<< id1 << " cc " << setprecision(2) << cc << " " << ccb << " am3 " << am3 << " " << am3b << " am2 " << am2 << " " << am2b << " am1 " << am1 << " " << am1b << " oc " << oc << " " << ocb
-					<< "  balmax1 " << balmax1 << " bal1 " << bal1 << " cnts " << cnts << " max " << max1 << " rev " << rev1 << endl;
+				ofstream outfile1(fn1, ios::out | ios::trunc);
+				if (outfile1.is_open())
+				{
+					outfile1 << fixed
+						<< id1 << " cc " << setprecision(2) << cc << " " << ccb << " am3 " << am3 << " " << am3b << " am2 " << am2 << " " << am2b << " am1 " << am1 << " " << am1b << " oc " << oc << " " << ocb
+						<< "  balmax1 " << balmax1 << " bal1 " << bal1 << " cnts " << cnts << " max " << max1 << " rev " << rev1 << endl;
+					outfile1.close();
+				}
 			}
 		}
+<<<<<<< HEAD
 		if (fmod(id1, 100000) == 0)
 		{
 			time_t tm; time(&tm);
 			cout << fixed << id1 / 100000 << "M cc " << setprecision(0) << cc << " " << ccb << " am3 " << setprecision(2) << am3 << " " << am3b << " am2 " << am2 << " " << am2b << " am1 " << am1 << " " << am1b << " oc " << setprecision(0) << oc << " " << ocb << ctime(&tm);
+=======
+		if (fmod(id1, 10*10000) == 0)
+		{
+			time_t tm; time(&tm);
+			cout << fixed << id1  << " cc " << setprecision(0) << cc << " " << ccb << " am3 " << setprecision(2) << am3 << " " << am3b << " am2 " << am2 << " " << am2b << " am1 " << am1 << " " << am1b << " oc " << setprecision(0) << oc << " " << ocb << ctime(&tm);
+>>>>>>> a2c3e11642e5b2df22612a35645e9ab548620bd1
 		}
 		id1++;
 	}
